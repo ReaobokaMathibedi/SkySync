@@ -14,33 +14,57 @@
     <title>Weather App</title>
   </head>
   <body>
+    <video
+      class="bg-video"
+      src="assets/coverr-a-man-sitting-on-a-rocky-beach-9816-1080p.mp4"
+      autoplay
+      muted
+      loop
+    ></video>
     <div class="weather-app">
       <header>
-        <form id="search-form">
+        <img src="assets/SheCodes Favicon.png" alt="SheCodes logo" />
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
             class="search-input"
-            id="search-input"
+            id="search-form-input"
           />
-          <input type="submit" value="Search" class="search-button" />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div class="current-weather">
-          <div>
-            <h1 class="current-city" id="current-city">Paris</h1>
-            <p class="current-details">
-              <span id="current-date"></span>, moderate rain <br />
-              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
-            </p>
+        <div class="weather-content">
+          <div class="current-weather-info-container">
+            <div class="weather-app-data">
+              <div>
+                <h1 class="weather-app-city" id="city"></h1>
+                <p class="weather-app-details"></p>
+                <div id="icon"></div>
+              </div>
+              <div class="weather-app-temperature-container">
+                <div class="weather-app-temperature" id="temperature"></div>
+                <span class="weather-app-unit">°C</span>
+              </div>
+              <span id="time"></span>,
+              <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </div>
+            <div class="profile-info">
+              <img
+                src="assets/Get Your Digital Characters Now! 🎨✨ Custom Artwork & Designs.jpg"
+                alt="Profile Image"
+                class="profile-image"
+              />
+              <span class="username">Reaoboka Mathibedi</span>
+            </div>
           </div>
-          <div class="current-temperature">
-            <span class="current-temperature-icon">☀️</span
-            ><span class="current-temperature-value" id="current-temperature"
-              >24</span
-            ><span class="current-temperature-unit">°C</span>
+          <div class="weather-forecast-container">
+            <h1>Weather Forecast</h1>
           </div>
         </div>
       </main>
