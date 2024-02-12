@@ -172,6 +172,11 @@ footer {
   color: whitesmoke;
 }
 
+.weather-forecast {
+  display: flex;
+  flex-direction: row;
+}
+
 .weather-forecast-container h1 {
   margin: 0;
   font-size: 22px;
@@ -181,4 +186,10 @@ footer {
 .weather-forecast-details {
   background: rgba(255, 255, 255, 0.082);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  border-radius: 7px;
+  max-width: 70px;
+  max-height: fit-content;
+  margin-top: 45px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
