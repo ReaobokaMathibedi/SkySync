@@ -77,16 +77,6 @@ main {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-.current-temperature {
-  font-size: 48px;
-}
-
-.current-weather {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .weather-app-temperature-container {
   display: inline-block;
   font-size: 18px;
@@ -151,23 +141,12 @@ main {
   padding: 2.5px;
 }
 
-.current-temperature-value {
-  font-size: 80px;
-  font-weight: bold;
-}
-
 .username {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 8px;
   padding-right: 8px;
   font-size: smaller;
-}
-
-.current-temperature-unit {
-  font-size: 28px;
-  position: relative;
-  top: -38px;
 }
 
 footer {
@@ -197,4 +176,9 @@ footer {
   margin: 0;
   font-size: 22px;
   font-weight: 900;
+}
+
+.weather-forecast-details {
+  background: rgba(255, 255, 255, 0.082);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
