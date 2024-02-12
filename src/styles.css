@@ -19,15 +19,16 @@ body {
 
 a {
   color: #885df1;
+  text-decoration: none;
 }
 
 .weather-app {
   backdrop-filter: blur(2px);
   border: 2px solid rgba(255, 255, 255, 0.116);
-  max-width: 700px;
+  max-width: fit-content;
   max-height: 615px;
   margin: 60px auto;
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
@@ -51,6 +52,7 @@ img {
   width: 80%;
   font-size: 16px;
   padding: 15px 20px;
+  color: whitesmoke;
 }
 
 .search-form-button {
@@ -147,12 +149,15 @@ main {
   padding-left: 8px;
   padding-right: 8px;
   font-size: smaller;
+  font-weight: 100;
 }
 
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.082);
+  font-weight: 300;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 5px;
+  padding-bottom: 35px;
   color: whitesmoke;
 }
 
@@ -163,6 +168,7 @@ footer {
 .weather-forecast-container {
   background: rgba(255, 255, 255, 0.082);
   min-width: 350px;
+  max-width: fit-content;
   text-align: center;
   padding: 20px;
   margin: 20px;
@@ -186,10 +192,30 @@ footer {
 .weather-forecast-details {
   background: rgba(255, 255, 255, 0.082);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  border-radius: 7px;
-  max-width: 70px;
-  max-height: fit-content;
+  border-radius: 15px;
+  max-width: fit-content;
+  height: 200px;
   margin-top: 45px;
-  margin-left: 5px;
+  margin-left: 8px;
   margin-right: 5px;
+  padding: 10px;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+
+.weather-forecast-icon {
+  height: 88px;
+  width: 88px;
+  display: block;
+  margin: 0 auto;
+}
+
+.weather-forecast-temps {
+  display: inline;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.weather-forecast-min-temp {
+  color: #B0E0E6;
 }
