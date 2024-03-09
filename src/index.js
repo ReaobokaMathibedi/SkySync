@@ -76,19 +76,27 @@ function displayForecast(response) {
       forecastHtml =
         forecastHtml +
         `
-      <div class="weather-forecast-details">
-        <div class="weather-forecast-day">${formatDay(day.time)}</div>
-            <img src="${
-              day.condition.icon_url
-            }" class="weather-forecast-icon" />
-           <div class="weather-forecast-temps">
-            <span class="weather-forecast-max-temp">${Math.round(
-              day.temperature.maximum
-            )}º</span>
-            <span class="weather-forecast-min-temp">${Math.round(
-              day.temperature.minimum
-            )}º</span>
-         </div>
+      
+      <div class="">
+        <div class="justify-content-center">
+          <div class="weather-forecast-details">
+            <div class="weather-forecast-day-container">
+              <div class="weather-forecast-day">${formatDay(day.time)}</div>
+                </div>
+                  <img src="${
+                    day.condition.icon_url
+                  }" class="weather-forecast-icon" />
+                <div class="weather-forecast-temps">
+                  <span class="weather-forecast-max-temp">${Math.round(
+                    day.temperature.maximum
+                  )}º</span>
+                  <span class="weather-forecast-min-temp">${Math.round(
+                    day.temperature.minimum
+                  )}º</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 `;
     }
